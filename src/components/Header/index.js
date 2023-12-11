@@ -9,7 +9,7 @@ const Header = () => {
         <Icon name="menu-outline" size={24} color="black" />
       </TouchableOpacity>
       <View style={styles.titleContainer}>
-        <Text style={styles.title}>Nome da Clínica</Text>
+        <Text style={styles.title}>Estetica</Text>
       </View>
       <TouchableOpacity style={styles.iconContainer}>
         <Icon name="search-outline" size={24} color="black" />
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 26,
-    paddingVertical:1,
+    paddingVertical:10,
     backgroundColor: '#F5F5F5',
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',

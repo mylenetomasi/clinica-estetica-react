@@ -9,8 +9,9 @@ function Card(props) {
         source={{ uri: props.movel.foto.url }}
         /> */}
       <View>
-        <Text style={{ fontSize:20, padding: 10, marginRight: 145}}>{props.procedimento.nome}</Text>
-        <Text style={{ fontSize:18, paddingLeft: 10 }}>R${props.procedimento.preco}</Text>
+        <Text style={{ fontSize:20, color: "#333", fontWeight: "600"}}>{props.procedimento.nome}</Text>
+        <Text style={{ fontSize:18, color: "#666"}}>{props.procedimento.descricao}</Text>
+        <Text style={{ fontSize:18, color: "#666", fontWeight: "500"}}>R${props.procedimento.preco}</Text>
       </View>
     </View>
     
@@ -19,12 +20,17 @@ function Card(props) {
 
 const styles = StyleSheet.create({
   card: {
-    width: 'auto',
-    height: 150,
+    width: "auto",
+    height: 170,
     borderRadius: 10,
+    padding: 15,
+    paddingLeft: 30,
+    alignItems: "center",
     flexDirection: "row",
-    margin: 20,
-    backgroundColor: 'white'
+    gap: 10,
+    marginVertical: 10,
+    marginHorizontal: 20,
+    backgroundColor: "white",
   },
 });
 

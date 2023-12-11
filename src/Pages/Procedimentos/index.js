@@ -23,7 +23,7 @@ export default function Home(){
       <Header/>
      </View>
 
-     <ScrollView style={{backgroundColor: '#E4C1C1'}}>
+     <ScrollView style={{backgroundColor: '#f4f4f4'}}>
           {Procedimentos.map((Procedimento) => (
             <Cardprocedimento key={Procedimento.id} procedimento={Procedimento} />
           ))}
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    backgroundColor: '#E4C1C1',
+    backgroundColor: '#f4f4f4',
   },
   header: {
     alignItems: 'center',
